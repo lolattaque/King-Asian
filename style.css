@@ -1,0 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+
+    /* Full-page background image */
+    background: url('images/image.png') center top/cover no-repeat fixed;
+    background-attachment: fixed; /* keeps it in place when scrolling */
+}
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    background: url('images/background.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px; /* adjust for navbar */
+  }
+  
+  .hero .overlay {
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 24px;
+  }
+  
+  /* Menu Section */
+  .menu-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .menu-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Deals Section */
+  .deals-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #acdae1;
+  }
+  
+  .deal-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .deal-card {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .deal-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 60px 20px;
+    background-color: #efefef;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu-images {
+      flex-direction: column;
+    }
+  
+    .deal-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .deal-card {
+      width: 80%;
+    }
+  }
+  
