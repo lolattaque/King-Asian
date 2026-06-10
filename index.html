@@ -3,62 +3,703 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Restaurant</title>
+  <title>King Asian Restaurant | Authentic Chinese Cuisine in Mississauga</title>
+  <meta name="description" content="King Asian Restaurant - Authentic Chinese cuisine. Dine in, take out and delivery in Mississauga.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">King Asian Restaurant</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#deals">Deals</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">King Asian <span>Restaurant</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
+  <!-- ================= HERO SECTION ================= -->
   <section id="home" class="hero">
-    <div class="overlay">
-      <h1>King Asian Restaurant</h1>
-      <p>Chinese Dine In, Take Out and Delivery</p>
+    <div class="hero-overlay">
+      <h1 class="hero-title">King Asian Restaurant</h1>
+      <p class="hero-tagline">Authentic Chinese Cuisine &mdash; Dine In, Take Out &amp; Delivery</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="tel:19052812388" class="btn btn-secondary">Order Online</a>
+      </div>
     </div>
   </section>
 
-  <!-- Menu Section -->
-  <section id="menu" class="menu-section">
-    <h2>Our Menu</h2>
-    <div class="menu-images">
-      <img src="images/menu1.jpg" alt="Menu Page 1" class="menu-img">
-      <img src="images/menu2.jpg" alt="Menu Page 2" class="menu-img">
+  <!-- ================= DEALS ================= -->
+  <section id="deals" class="deals-section fade-in">
+    <div class="section-heading light">
+      <h2>Special Deals</h2>
     </div>
-  </section>
-
-  <!-- Deals Section -->
-  <section id="deals" class="deals-section">
-    <h2>Special Deals</h2>
     <div class="deal-cards">
       <div class="deal-card">
-        <img src="images/deal1.png" alt="Deal 1">
-        <p>Cash $30 before tax: free spring rolls or french fries!</p>
+        <div class="deal-card-body">
+          <span class="deal-free">FREE</span>
+          <h3>Spring Rolls or French Fries</h3>
+          <p class="deal-condition">With any order over $30.00</p>
+          <ul class="deal-terms">
+            <li>Before tax, cash only</li>
+            <li>Not including debit card</li>
+            <li>Not valid with any other offers</li>
+            <li>Alcohol does not count towards order total</li>
+          </ul>
+        </div>
       </div>
       <div class="deal-card">
-        <img src="images/deal2.png" alt="Deal 2">
-        <p>Cash $50 before tax: free spring rolls, torpedo shrimp, dumplings or coconut shrimp!</p>
+        <div class="deal-card-body">
+          <span class="deal-free">FREE</span>
+          <h3>Spring Rolls / Fried Dumplings (12pcs) / Torpedo Shrimp (10pcs) / Coconut Shrimp (10pcs) / Sesame Balls (10pcs)</h3>
+          <p class="deal-condition">With any order over $50.00</p>
+          <ul class="deal-terms">
+            <li>Before tax, cash only</li>
+            <li>Not including debit card</li>
+            <li>Not valid with any other offers</li>
+            <li>Alcohol does not count towards order total</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p>2500 Hurontario St, Mississauga</p>
-    <p>Phone: (905) 281-2388</p>
+  <!-- ================= ABOUT US ================= -->
+  <section id="about" class="about fade-in">
+    <div class="section-heading">
+      <h2>About Us</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>King Asian Restaurant is a proud family-owned restaurant serving the Mississauga community with authentic Chinese cuisine. Every dish is prepared using fresh ingredients and traditional recipes passed down through generations.</p>
+        <p>Whether you're looking to dine in with family and friends, grab a quick take out order, or have a delicious meal delivered straight to your door, we're committed to bringing you flavorful, high-quality food every time.</p>
+      </div>
+      <div class="about-features">
+        <div class="feature-card">
+          <h3>Family Owned</h3>
+          <p>A local family business dedicated to genuine hospitality and great food.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fresh Ingredients</h3>
+          <p>We source fresh ingredients daily and follow traditional recipes.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Dine In, Take Out &amp; Delivery</h3>
+          <p>Enjoy your favourite dishes however works best for you.</p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ================= FEATURED DISHES ================= -->
+  <section id="featured" class="featured">
+    <div class="section-heading">
+      <h2>Featured Dishes</h2>
+    </div>
+    <div class="dish-grid">
+      <article class="dish-card fade-in">
+        <img src="Images/general-tao-chicken.jpg" alt="General Tao's Chicken">
+        <div class="dish-info">
+          <div class="dish-title-row">
+            <h3>General Tao's Chicken</h3>
+            <span class="price">$17.95</span>
+          </div>
+          <p>Crispy chicken tossed in a sweet and spicy signature sauce, topped with sesame seeds.</p>
+        </div>
+      </article>
+      <article class="dish-card fade-in">
+        <img src="Images/sweet-sour-pork.jpg" alt="Sweet and Sour Pork">
+        <div class="dish-info">
+          <div class="dish-title-row">
+            <h3>Sweet and Sour Pork</h3>
+            <span class="price">$17.95</span>
+          </div>
+          <p>Tender pork pieces lightly battered and stir-fried with peppers, pineapple and onion.</p>
+        </div>
+      </article>
+      <article class="dish-card fade-in">
+        <img src="Images/cantonese-chow-mein.jpg" alt="Cantonese Chow Mein">
+        <div class="dish-info">
+          <div class="dish-title-row">
+            <h3>Cantonese Chow Mein</h3>
+            <span class="price">$17.95</span>
+          </div>
+          <p>Soft or crispy noodles with shrimp, chicken, pork, beef and fresh vegetables.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= FULL MENU ================= -->
+  <section id="menu" class="menu-section">
+    <div class="section-heading">
+      <h2>Full Menu</h2>
+    </div>
+    <p class="menu-note">Hot &amp; Spicy dishes can be adjusted to your taste &mdash; just let us know when ordering. Please inform us of any food allergies. Prices are subject to change and do not include applicable tax.</p>
+
+    <nav class="menu-nav" aria-label="Menu categories">
+      <a href="#cat-appetizers">Appetizers</a>
+      <a href="#cat-soups">Soup &amp; Noodle Soup</a>
+      <a href="#cat-sweet-sour">Sweet &amp; Sour / Honey Garlic</a>
+      <a href="#cat-chop-suey">Chop Suey</a>
+      <a href="#cat-curry">Curry Dishes</a>
+      <a href="#cat-cashews">Diced Vegetables &amp; Cashews</a>
+      <a href="#cat-noodles">Egg Noodle &amp; Lo Mein</a>
+      <a href="#cat-szechuan">Spicy Szechuan Favourites</a>
+      <a href="#cat-cantonese">Cantonese Best Dishes</a>
+      <a href="#cat-seafood">Seafood Delight</a>
+      <a href="#cat-rice">Rice</a>
+      <a href="#cat-vegetarian">Vegetarian Delight</a>
+      <a href="#cat-indian">Indian Special</a>
+      <a href="#cat-lunch">Daily Lunch Specials</a>
+      <a href="#cat-combos">Family Meals &amp; Combos</a>
+      <a href="#cat-trays">Party Trays</a>
+      <a href="#cat-beers">Beers</a>
+    </nav>
+
+    <div class="menu-categories">
+
+      <!-- Appetizers -->
+      <div class="menu-category fade-in" id="cat-appetizers">
+        <h3 class="category-title">Appetizers</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">10. Egg Roll</span><span class="dots"></span><span class="price">$2.55</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">11. Spring Roll</span><span class="dots"></span><span class="price">$2.55</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">11(1). 3 Spring Rolls</span><span class="dots"></span><span class="price">$4.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">11(2). Small Spring Roll</span><span class="dots"></span><span class="price">$1.30</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">11(3). 3 Small Spring Rolls</span><span class="dots"></span><span class="price">$2.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">12. BBQ Sliced Pork</span><span class="dots"></span><span class="price">$21.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="BBQ Spareribs (Long)" data-price="$22.95" data-img="Images/bbq-spareribs-long.jpg" data-desc="Tender pork spareribs marinated and roasted to a sticky, savoury-sweet glaze."><span class="item-name">13. BBQ Spareribs (Long)</span><span class="dots"></span><span class="price">$22.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">14. Crispy Chicken Wings</span><span class="dots"></span><span class="price">$16.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">15. Hot Garlic Chicken Wings</span><span class="dots"></span><span class="price">$17.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">16. Crispy Fried Wonton</span><span class="dots"></span><span class="price">$11.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">17. Breaded Jumbo Shrimp</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">18. Fried Dumplings (12)</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">19A. French Fries (Large)</span><span class="dots"></span><span class="price">$7.50</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Torpedo Shrimp (10)" data-price="$13.95" data-img="Images/torpedo-shrimp.jpg" data-desc="Crispy breaded shrimp wrapped on skewers and fried until golden."><span class="item-name">19B. Torpedo Shrimp (10)</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Spicy Peanut Butter Pork Dumplings (8)" data-price="$10.95" data-img="Images/peanut-butter-pork-dumplings.jpg" data-desc="Pan-fried pork dumplings drizzled with a spicy peanut butter sauce."><span class="item-name">19C. Spicy Peanut Butter Pork Dumplings (8)</span><span class="dots"></span><span class="price">$10.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">19E. Crispy Cheese Wonton (12)</span><span class="dots"></span><span class="price">$14.95</span><span class="item-desc">Cheese and crab meat.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Coconut Butterfly Shrimp (10)" data-price="$15.95" data-img="Images/coconut-butterfly-shrimp.jpg" data-desc="Jumbo shrimp butterflied, coated in coconut and fried until golden and crispy."><span class="item-name">19F. Coconut Butterfly Shrimp (10)</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Sesame Balls (5)" data-price="$7.95" data-img="Images/sesame-balls.jpg" data-desc="Crispy fried glutinous rice balls coated in sesame seeds with a sweet filling."><span class="item-name">19G. Sesame Balls (5)</span><span class="dots"></span><span class="price">$7.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Soup & Noodle in Soup -->
+      <div class="menu-category fade-in" id="cat-soups">
+        <h3 class="category-title">Soup &amp; Noodle in Soup</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">1. Wonton Soup</span><span class="dots"></span><span class="price">$6.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">2. Wonton Noodle Soup</span><span class="dots"></span><span class="price">$8.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">3. Hot and Sour Soup</span><span class="dots"></span><span class="price">$6.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">4. Egg Drop &amp; Mushroom Soup</span><span class="dots"></span><span class="price">$6.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">5. Beef Vietnam Noodle Soup</span><span class="dots"></span><span class="price">$8.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">6A. Egg Noodle Soup with Chicken</span><span class="dots"></span><span class="price">$8.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">6B. Egg Noodle Soup with Vegetable</span><span class="dots"></span><span class="price">$8.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">7. Chicken Corn Soup</span><span class="dots"></span><span class="price">$6.50</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Sweet & Sour, Honey Garlic -->
+      <div class="menu-category fade-in" id="cat-sweet-sour">
+        <h3 class="category-title">Sweet &amp; Sour, Honey Garlic</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">20. Sweet and Sour Spareribs</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Sweet and Sour Pork" data-price="$17.95" data-img="Images/sweet-sour-pork.jpg" data-desc="Tender pork pieces lightly battered and stir-fried with peppers, pineapple and onion."><span class="item-name">21. Sweet and Sour Pork</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">22. Sweet and Sour Chicken Balls</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Sweet and Sour Breaded Shrimp" data-price="$19.95" data-img="Images/sweet-sour-breaded-shrimp.jpg" data-desc="Crispy breaded shrimp tossed in a tangy sweet and sour sauce with peppers and pineapple."><span class="item-name">23. Sweet and Sour Breaded Shrimp</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">24. Honey Garlic Spareribs</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">25. Honey Garlic Chicken Balls</span><span class="dots"></span><span class="price">$20.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">26. Honey Garlic Chicken Wings</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Sweet and Sour Chicken" data-price="$17.95" data-img="Images/sweet-sour-chicken.jpg" data-desc="Tender chicken pieces lightly battered and stir-fried in a tangy sweet and sour sauce."><span class="item-name">27. Sweet and Sour Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Honey Garlic Chicken" data-price="$17.95" data-img="Images/honey-garlic-chicken.jpg" data-desc="Crispy chicken pieces glazed in a sweet and savoury honey garlic sauce."><span class="item-name">28. Honey Garlic Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Chop Suey -->
+      <div class="menu-category fade-in" id="cat-chop-suey">
+        <h3 class="category-title">Chop Suey <span class="category-sub">(Bean Sprouts)</span></h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">30. Chicken</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Beef Chop Suey" data-price="$14.95" data-img="Images/beef-chop-suey.jpg" data-desc="Sliced beef stir-fried with crisp bean sprouts and fresh vegetables in a light sauce."><span class="item-name">31. Beef</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">32. BBQ Pork</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">33. Shrimp</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">34. Vegetables</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Curry Dishes -->
+      <div class="menu-category fade-in" id="cat-curry">
+        <h3 class="category-title">Curry Dishes</h3>
+        <p class="category-note">Tender meat in curry sauce with vegetables.</p>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">40. Curry Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Curry Beef" data-price="$17.95" data-img="Images/curry-beef.jpg" data-desc="Tender beef simmered in a fragrant curry sauce with onions and vegetables."><span class="item-name">41. Curry Beef</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">42. Curry Shrimp</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">43. Mixed Vegetables with Curry</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Diced Vegetables, Cashews -->
+      <div class="menu-category fade-in" id="cat-cashews">
+        <h3 class="category-title">Diced Vegetables, Cashews</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row menu-item" data-name="Stir Fried Mixed Vegetables with Cashew" data-price="$15.95" data-img="Images/cashew-mixed-vegetables.jpg" data-desc="Crisp seasonal vegetables stir-fried with crunchy roasted cashews in a light savoury sauce."><span class="item-name">50. Stir Fried Mixed Vegetables with Cashew</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">51. Chicken with Diced Vegetables and Cashews</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">52. Beef with Diced Vegetables and Cashews</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">53. Pork with Diced Vegetables and Cashews</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">54. Shrimp with Diced Vegetables and Cashews</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Egg Noodle & Lo Mein -->
+      <div class="menu-category fade-in" id="cat-noodles">
+        <h3 class="category-title">Egg Noodle &amp; Lo Mein</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row menu-item" data-name="Cantonese Chow Mein" data-price="$17.95" data-img="Images/cantonese-chow-mein.jpg" data-desc="Soft or crispy noodles with shrimp, chicken, pork and beef &amp; fresh vegetables."><span class="item-name">60. Cantonese Chow Mein</span><span class="dots"></span><span class="price">$17.95</span><span class="item-desc">Soft or crispy noodle with shrimp, chicken, pork and beef &amp; fresh vegetables.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Szechuan Noodles" data-price="$17.50" data-img="Images/szechuan-noodles.jpg" data-desc="Thick noodles tossed with tender chicken slices in a spicy Szechuan chili paste."><span class="item-name">61. Szechuan Noodles</span><span class="dots"></span><span class="price">$17.50</span><span class="item-desc">Thick noodle with tender slices of chicken in spicy chili paste.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Pad Thai" data-price="$17.95" data-img="Images/pad-thai.jpg" data-desc="Stir-fried rice noodles with chicken, shrimp, egg and crushed peanuts in a spicy tamarind sauce."><span class="item-name">62. Pad Thai</span><span class="dots"></span><span class="price">$17.95</span><span class="item-desc">Chicken, shrimp and peanuts &mdash; spicy.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Singapore Rice Noodles" data-price="$17.95" data-img="Images/singapore-rice-noodles.jpg" data-desc="Rice vermicelli with shrimp, chicken, bean sprouts and carrots tossed in aromatic curry paste."><span class="item-name">63. Singapore Rice Noodles</span><span class="dots"></span><span class="price">$17.95</span><span class="item-desc">Rice vermicelli with shrimp, chicken, bean sprouts &amp; carrots in aromatic curry paste.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Shanghai Noodles" data-price="$17.95" data-img="Images/shanghai-noodles.jpg" data-desc="Thick Shanghai noodles stir-fried with beef, shrimp and cabbage in a savoury sauce."><span class="item-name">64. Shanghai Noodles</span><span class="dots"></span><span class="price">$17.95</span><span class="item-desc">Beef &amp; shrimp tossed with cabbage and thick Shanghai noodle.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">65. Chicken or Beef Lo Mein</span><span class="dots"></span><span class="price">$17.50</span><span class="item-desc">Egg noodle with chicken or beef and vegetables.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">66. Shrimp Lo Mein</span><span class="dots"></span><span class="price">$18.50</span><span class="item-desc">Egg noodles stir-fried with shrimp, broccoli and vegetables.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">67. Vegetable Lo Mein</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">68. Vegetable Szechuan Noodles</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Chow Mein with Bean Sprouts" data-price="$14.95" data-img="Images/chow-mein-bean-sprouts.jpg" data-desc="Crispy fried noodles topped with stir-fried bean sprouts in a light savoury sauce."><span class="item-name">69. Chow Mein with Bean Sprouts</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">70. Beef Ho Fan</span><span class="dots"></span><span class="price">$18.95</span><span class="item-desc">Rice noodle stir-fried with onion in a black bean garlic sauce.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Beef Ho Fan with Soya" data-price="$17.95" data-img="Images/beef-ho-fan-soya-sauce.jpg" data-desc="Wide rice noodles wok-tossed with tender beef, bean sprouts and onion in soya sauce."><span class="item-name">71. Beef Ho Fan with Soya</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">72. House Special Noodle</span><span class="dots"></span><span class="price">$18.95</span><span class="item-desc">Thick noodle with shrimp, chicken &amp; beef, stir-fried with real butter and black pepper.</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Spicy Szechuan Favourites -->
+      <div class="menu-category fade-in" id="cat-szechuan">
+        <h3 class="category-title">Spicy Szechuan Favourites</h3>
+        <p class="category-note">Hot, hot, hot! Tell us how spicy you like it &mdash; we're happy to serve it without pepper.</p>
+        <ul class="menu-list">
+          <li><button class="menu-row menu-item" data-name="Black Pepper Beef" data-price="$17.95" data-img="Images/black-pepper-beef.jpg" data-desc="Sliced beef and onions stir-fried in a bold, peppery black pepper sauce."><span class="item-name">78. Black Pepper Beef</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">79. Orange Chicken or Beef</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">80. Spicy Peanut Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">81. Kung Po Chicken or Beef</span><span class="dots"></span><span class="price">$17.95</span><span class="item-desc">Diced chicken or beef with vegetables, tossed with roasted peanuts.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="General Tao's Chicken" data-price="$17.95" data-img="Images/general-tao-chicken.jpg" data-desc="Crispy chicken tossed in a sweet and spicy signature sauce, topped with sesame seeds."><span class="item-name">82. General Tao's Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Crispy Ginger Chicken or Beef" data-price="$17.95" data-img="Images/crispy-ginger-chicken.jpg" data-desc="Crispy fried chicken or beef tossed in a fragrant fresh ginger and scallion sauce."><span class="item-name">83. Crispy Ginger Chicken or Beef</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">84. Crispy Ginger Shrimp</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">85. Chili Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Szechuan Chicken or Beef" data-price="$17.95" data-img="Images/szechuan-chicken-beef.jpg" data-desc="Chicken or beef stir-fried with vegetables in a spicy Szechuan chili sauce."><span class="item-name">86. Szechuan Chicken or Beef</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Sesame Chicken or Beef" data-price="$18.50" data-img="Images/sesame-chicken-beef.jpg" data-desc="Crispy chicken or beef tossed in a sweet sesame glaze and topped with sesame seeds."><span class="item-name">87. Sesame Chicken or Beef</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">88. Mandarin Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Ma-Po Tofu" data-price="$15.95" data-img="Images/mapo-tofu.jpg" data-desc="Soft tofu and minced pork simmered in a spicy, savoury Szechuan-style sauce."><span class="item-name">89. Ma-Po Tofu</span><span class="dots"></span><span class="price">$15.95</span><span class="item-desc">Fresh tofu with pork in a special sauce.</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Salt and Pepper Tofu" data-price="$15.95" data-img="Images/salt-and-pepper-tofu.jpg" data-desc="Crispy fried tofu tossed with salt, pepper, garlic and fresh chilies."><span class="item-name">Salt and Pepper Tofu</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Salt and Pepper Chicken</span><span class="dots"></span><span class="price">$17.50</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Cantonese Best Dishes -->
+      <div class="menu-category fade-in" id="cat-cantonese">
+        <h3 class="category-title">Cantonese Best Dishes</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row menu-item" data-name="Lemon Chicken" data-price="$17.95" data-img="Images/lemon-chicken.jpg" data-desc="Crispy battered chicken fillets served with a bright, tangy lemon sauce."><span class="item-name">130. Lemon Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">131. Chicken Soo Guy</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">132. Egg Foo Young</span><span class="dots"></span><span class="price">$18.50</span><span class="item-desc">Chicken, pork, beef or shrimp.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">133. Chicken with Broccoli</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Beef with Broccoli" data-price="$18.50" data-img="Images/beef-broccoli.jpg" data-desc="Tender beef and crisp broccoli stir-fried in a savoury brown sauce."><span class="item-name">134. Beef with Broccoli</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">135. Chicken with Black Bean Sauce</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">136. Beef with Black Bean Sauce</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">137. Chicken or Beef with Peppers and Mushroom</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">138. Chicken or Beef with Snow Peas</span><span class="dots"></span><span class="price">$19.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">139. Almond Guy Pan</span><span class="dots"></span><span class="price">$18.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">140. Tai Dop Way</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">141. Chicken with Mixed Vegetables</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">142. Beef with Mixed Vegetables</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">143. Spareribs with Black Bean Sauce</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">144. Sizzling Satay Beef</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">145. Deep Fried Spicy Pork Chop</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">146. Teriyaki Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Seafood Delight -->
+      <div class="menu-category fade-in" id="cat-seafood">
+        <h3 class="category-title">Seafood Delight</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">92. Shrimp with Mixed Vegetables</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">93. Shrimp with Lobster Sauce</span><span class="dots"></span><span class="price">$19.50</span><span class="item-desc">Minced pork, shrimp and egg in black bean sauce.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">94. Shrimp with Snow Peas</span><span class="dots"></span><span class="price">$20.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">95. Seafood Mixed Vegetables</span><span class="dots"></span><span class="price">$20.95</span><span class="item-desc">Shrimp, scallops, squid and crab meat with vegetables.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">96. Szechuan Shrimp</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">97. Scallops Hot Garlic</span><span class="dots"></span><span class="price">$21.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">98. Salt and Pepper Shrimp</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">99. Salt and Pepper Fish</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Mandarin Fish" data-price="$17.95" data-img="Images/mandarin-fish.jpg" data-desc="Tender fish fillets stir-fried in a tangy mandarin-style sauce with vegetables."><span class="item-name">100. Mandarin Fish</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">101. Black Bean Sauce Fish</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">102. Seafood Fried Noodle</span><span class="dots"></span><span class="price">$20.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">103. Salt and Pepper Squid</span><span class="dots"></span><span class="price">$19.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">104. Deep Fried Shrimp Ball</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Rice -->
+      <div class="menu-category fade-in" id="cat-rice">
+        <h3 class="category-title">Rice</h3>
+        <p class="category-note">All rice no egg, $1 extra.</p>
+        <ul class="menu-list">
+          <li><button class="menu-row menu-item" data-name="House Special Fried Rice" data-price="$16.95" data-img="Images/house-special-fried-rice.jpg" data-desc="Wok-fried rice loaded with shrimp, chicken, pork and beef."><span class="item-name">119. House Special Fried Rice</span><span class="dots"></span><span class="price">$16.95</span><span class="item-desc">Shrimp, chicken, pork and beef.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">120. Chicken Fried Rice</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">121. Beef Fried Rice</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">122. BBQ Pork Fried Rice</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">123. Shrimp Fried Rice</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">124. Mushroom Fried Rice</span><span class="dots"></span><span class="price">$13.95</span></button></li>
+          <li><button class="menu-row menu-item" data-name="Vegetable Fried Rice" data-price="$13.95" data-img="Images/vegetable-fried-rice.jpg" data-desc="Wok-fried rice with mixed vegetables and egg in a savoury soy seasoning."><span class="item-name">125. Vegetable Fried Rice</span><span class="dots"></span><span class="price">$13.95</span><span class="item-desc">Contains egg.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">126. Plain Fried Rice</span><span class="dots"></span><span class="price">$11.50</span><span class="item-desc">With peas and carrot.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">127. Young Chow Fried Rice</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">128. Szechuan Fried Rice</span><span class="dots"></span><span class="price">$14.50</span><span class="item-desc">Pork, chicken or beef (shrimp +$2.00).</span></button></li>
+          <li><div class="menu-row tray-row"><span class="item-name">129. Plain Steamed Rice</span><span class="dots"></span><span class="tray-prices"><span class="price">S $3.50</span><span class="price-sep">/</span><span class="price">L $8.95</span></span></div></li>
+        </ul>
+      </div>
+
+      <!-- Vegetarian Delight -->
+      <div class="menu-category fade-in" id="cat-vegetarian">
+        <h3 class="category-title">Vegetarian Delight</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">110. Stir Fried Mixed Vegetables</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">111. Chinese Baby Bok Choy</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">112. Steamed Mixed Vegetables</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">113. Stir Fried Snow Peas</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">114. Home Style Tofu with Vegetable</span><span class="dots"></span><span class="price">$15.95</span><span class="item-desc">Hot pot style.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">115. Yu Shiang Broccoli</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">116. Yu Shiang Eggplant</span><span class="dots"></span><span class="price">$15.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">117. Szechuan Mixed Vegetables</span><span class="dots"></span><span class="price">$14.95</span><span class="item-desc">Spicy.</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Indian Special -->
+      <div class="menu-category fade-in" id="cat-indian">
+        <h3 class="category-title">Indian Special</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">105. Garlic Mixed Vegetables</span><span class="dots"></span><span class="price">$14.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">106. Vegetarian Hakka Chow Mein</span><span class="dots"></span><span class="price">$16.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">107. Chili Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">108. Manchurian Chicken</span><span class="dots"></span><span class="price">$17.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">109. Hakka Chow Mein with Chicken</span><span class="dots"></span><span class="price">$18.95</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Daily Lunch Specials -->
+      <div class="menu-category fade-in" id="cat-lunch">
+        <h3 class="category-title">Daily Lunch Specials</h3>
+        <p class="category-note">Extra $2 for delivery.</p>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L1. Chicken/Beef Mixed Vegetables on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L2. Tofu Mixed Vegetables on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L3. Beef Ho Fan Soya Sauce</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L4. Cantonese Chow Mein</span><span class="dots"></span><span class="price">$12.95</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L5. Pad Thai Noodle</span><span class="dots"></span><span class="price">$12.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L6. Szechuan Noodle with Chicken</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L7. General Tao Chicken or Beef on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L8. Curry Chicken or Beef on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L9. Szechuan Beef or Chicken on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L10. Beef or Chicken Black Bean Sauce on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L11. Sweet &amp; Sour Pork on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L12. Chicken Ball, Chop Suey, Fried Rice &amp; Egg Roll</span><span class="dots"></span><span class="price">$12.50</span><span class="item-desc">Sweet &amp; sour sauce on the side, $1.50 extra.</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">L13. Beef with Mushroom on Rice</span><span class="dots"></span><span class="price">$11.50</span></button></li>
+        </ul>
+      </div>
+
+      <!-- Family Meals & Special Combos -->
+      <div class="menu-category fade-in wide" id="cat-combos">
+        <h3 class="category-title">Family Meals &amp; Combos</h3>
+        <p class="category-note">Extra $2 when delivered &mdash; no substitutions. Sweet &amp; sour sauce on the side, $1.50 extra.</p>
+        <div class="combo-grid">
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 2</h4><span class="price">$49.95</span></div>
+            <ul class="combo-list">
+              <li>2 Egg Rolls</li>
+              <li>Chicken Chop Suey</li>
+              <li>Chicken Fried Rice</li>
+              <li>Chicken Wings (8 pc)</li>
+              <li>Sweet &amp; Sour Chicken Balls (6 pc)</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 3</h4><span class="price">$69.95</span></div>
+            <ul class="combo-list">
+              <li>3 Egg Rolls</li>
+              <li>Chicken Chop Suey</li>
+              <li>Chicken Fried Rice</li>
+              <li>Beef Mixed Vegetables</li>
+              <li>Chicken Wings (8 pc)</li>
+              <li>Sweet &amp; Sour Chicken Balls (8 pc)</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 4</h4><span class="price">$89.95</span></div>
+            <ul class="combo-list">
+              <li>4 Egg Rolls</li>
+              <li>Chicken Fried Rice (L)</li>
+              <li>Chicken Chop Suey (L)</li>
+              <li>Beef Mixed Vegetables (L)</li>
+              <li>Chicken Wings</li>
+              <li>Sweet &amp; Sour Chicken Balls</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 5</h4><span class="price">$115.95</span></div>
+            <ul class="combo-list">
+              <li>5 Egg Rolls</li>
+              <li>Chicken Fried Rice (L)</li>
+              <li>Chicken Chop Suey (L)</li>
+              <li>Beef Mixed Vegetables (L)</li>
+              <li>Chicken Wings</li>
+              <li>Sweet &amp; Sour Chicken Balls</li>
+              <li>Sweet &amp; Sour Breaded Jumbo Shrimp</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 6</h4><span class="price">$129.95</span></div>
+            <ul class="combo-list">
+              <li>6 Egg Rolls</li>
+              <li>Chicken Fried Rice (L)</li>
+              <li>Chicken Chop Suey (L)</li>
+              <li>Beef Mixed Vegetables (L)</li>
+              <li>Cantonese Chow Mein (L)</li>
+              <li>Chicken Wings</li>
+              <li>Sweet &amp; Sour Chicken Balls</li>
+              <li>Sweet &amp; Sour Breaded Jumbo Shrimp</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Dinner for 8</h4><span class="price">$156.95</span></div>
+            <ul class="combo-list">
+              <li>8 Egg Rolls</li>
+              <li>Chicken Fried Rice (L)</li>
+              <li>Chicken Chop Suey (L)</li>
+              <li>Beef Mixed Vegetables (L)</li>
+              <li>Cantonese Chow Mein (L)</li>
+              <li>Chicken Wings</li>
+              <li>Sweet &amp; Sour Chicken Balls</li>
+              <li>Sweet &amp; Sour Breaded Jumbo Shrimp</li>
+              <li>General Tao Chicken (L)</li>
+              <li>House Special Noodles (L)</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Combo A1</h4><span class="price">$15.95</span></div>
+            <ul class="combo-list">
+              <li>Egg Roll</li>
+              <li>Chicken Balls (4)</li>
+              <li>Chop Suey</li>
+              <li>Fried Rice</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Combo A2</h4><span class="price">$15.95</span></div>
+            <ul class="combo-list">
+              <li>Egg Roll</li>
+              <li>Chicken Wings (4)</li>
+              <li>Chop Suey</li>
+              <li>Fried Rice</li>
+            </ul>
+          </div>
+          <div class="combo-card">
+            <div class="combo-header"><h4>Combo A3</h4><span class="price">$15.95</span></div>
+            <ul class="combo-list">
+              <li>Egg Roll</li>
+              <li>Diced Beef Mixed Vegetables</li>
+              <li>Chop Suey</li>
+              <li>Fried Rice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Party Trays -->
+      <div class="menu-category fade-in" id="cat-trays">
+        <h3 class="category-title">Party Trays</h3>
+        <div class="tray-header"><span></span><span class="tray-prices"><span>Small</span><span>Large</span></span></div>
+        <ul class="menu-list">
+          <li><div class="menu-row tray-row"><span class="item-name">1. Cantonese Chow Mein</span><span class="dots"></span><span class="tray-prices"><span class="price">$60</span><span class="price">$130</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">2. General Tao Chicken</span><span class="dots"></span><span class="tray-prices"><span class="price">$60</span><span class="price">$130</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">3. Sweet &amp; Sour Pork or Chicken</span><span class="dots"></span><span class="tray-prices"><span class="price">$60</span><span class="price">$130</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">4. Salt &amp; Pepper Squid</span><span class="dots"></span><span class="tray-prices"><span class="price">$65</span><span class="price">$140</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">5. Beef Broccoli</span><span class="dots"></span><span class="tray-prices"><span class="price">$65</span><span class="price">$140</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">6. Stir Fried Mixed Vegetables</span><span class="dots"></span><span class="tray-prices"><span class="price">$50</span><span class="price">$110</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">7. Crispy Chicken Wings</span><span class="dots"></span><span class="tray-prices"><span class="price">$48</span><span class="price">$95</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">8. Fried Rice (Chicken/Beef/Pork)</span><span class="dots"></span><span class="tray-prices"><span class="price">$45</span><span class="price">$95</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">9. Vegetable Fried Rice</span><span class="dots"></span><span class="tray-prices"><span class="price">$45</span><span class="price">$95</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">10. Salt &amp; Pepper Pork Chop</span><span class="dots"></span><span class="tray-prices"><span class="price">$60</span><span class="price">$125</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">11. Shanghai Noodle</span><span class="dots"></span><span class="tray-prices"><span class="price">$60</span><span class="price">$120</span></span></div></li>
+          <li><div class="menu-row tray-row"><span class="item-name">12. House Special Fried Rice</span><span class="dots"></span><span class="tray-prices"><span class="price">$55</span><span class="price">$120</span></span></div></li>
+        </ul>
+        <p class="category-note">*Other items available upon request. Hot &amp; spicy can be adjusted upon request.</p>
+      </div>
+
+      <!-- Beers -->
+      <div class="menu-category fade-in" id="cat-beers">
+        <h3 class="category-title">Beers</h3>
+        <ul class="menu-list">
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Budweiser</span><span class="dots"></span><span class="price">$5.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Coors Light</span><span class="dots"></span><span class="price">$5.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Labatt Blue</span><span class="dots"></span><span class="price">$5.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Molson Canadian</span><span class="dots"></span><span class="price">$5.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Corona</span><span class="dots"></span><span class="price">$6.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Heineken</span><span class="dots"></span><span class="price">$6.00</span></button></li>
+          <li><button class="menu-row" type="button" disabled><span class="item-name">Stella Artois</span><span class="dots"></span><span class="price">$6.00</span></button></li>
+        </ul>
+        <p class="category-note">*Alcohol does not count towards Special Deals offers.</p>
+      </div>
+
+    </div>
+    <p class="menu-hint">Items with a &#128247; can be tapped to see a photo and description</p>
+  </section>
+
+  <!-- ================= MENU ITEM MODAL ================= -->
+  <div class="modal-overlay" id="menu-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <img id="modal-img" src="" alt="">
+      <div class="modal-body">
+        <div class="dish-title-row">
+          <h3 id="modal-title"></h3>
+          <span class="price" id="modal-price"></span>
+        </div>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="gallery">
+    <div class="section-heading">
+      <h2>Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in"><img src="Images/image.png" alt="Signature dish at King Asian Restaurant"></div>
+      <div class="gallery-item fade-in"><img src="Images/menu1.jpg" alt="Menu page 1"></div>
+      <div class="gallery-item fade-in"><img src="Images/menu2.jpg" alt="Menu page 2"></div>
+      <div class="gallery-item fade-in"><img src="Images/black-pepper-beef.jpg" alt="Black Pepper Beef"></div>
+      <div class="gallery-item fade-in"><img src="Images/bbq-spareribs-long.jpg" alt="BBQ Spareribs"></div>
+      <div class="gallery-item fade-in"><img src="Images/shanghai-noodles.jpg" alt="Shanghai Noodles"></div>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOMER REVIEWS ================= -->
+  <section id="reviews" class="reviews">
+    <div class="section-heading">
+      <h2>Customer Reviews</h2>
+    </div>
+    <div class="review-grid">
+      <div class="review-card fade-in">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"Best Chinese food in Mississauga! The General Tso's Chicken is incredible and the staff are always so friendly."</p>
+        <p class="review-author">&mdash; Sarah M.</p>
+      </div>
+      <div class="review-card fade-in">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"We order from here every week. Fast delivery, generous portions, and the flavours always hit the spot."</p>
+        <p class="review-author">&mdash; James L.</p>
+      </div>
+      <div class="review-card fade-in">
+        <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+        <p class="review-text">"Great family-run spot with friendly service. The dim sum selection is a must-try!"</p>
+        <p class="review-author">&mdash; Priya K.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOURS ================= -->
+  <section id="hours" class="hours fade-in">
+    <div class="section-heading">
+      <h2>Hours</h2>
+    </div>
+    <div class="hours-table">
+      <div class="hours-row">
+        <span>Monday &ndash; Thursday</span>
+        <span>1:00 PM &ndash; 1:00 AM</span>
+      </div>
+      <div class="hours-row">
+        <span>Friday &ndash; Saturday</span>
+        <span>1:00 PM &ndash; 2:00 AM</span>
+      </div>
+      <div class="hours-row">
+        <span>Sunday</span>
+        <span>1:00 PM &ndash; 1:00 AM</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact">
+    <div class="section-heading">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info fade-in">
+        <p><strong>Address:</strong><br>2500 Hurontario St. (King St.) Unit 11<br>Mississauga, Ontario L5B 1N4</p>
+        <p><strong>Phone:</strong><br><a href="tel:19052812388">(905) 281-2388</a></p>
+        <p><strong>Email:</strong><br><a href="mailto:info@kingasianrestaurant.ca">info@kingasianrestaurant.ca</a></p>
+      </div>
+      <div class="contact-map fade-in">
+        <iframe
+          title="King Asian Restaurant location map"
+          src="https://maps.google.com/maps?q=2500%20Hurontario%20St%20Unit%2011%2C%20Mississauga%2C%20ON%20L5B%201N4&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>King Asian <span>Restaurant</span></h3>
+        <p>Authentic Chinese Cuisine since day one.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .2 2.7.5.7.3 1.3.7 1.9 1.3.6.6 1 1.2 1.3 1.9.3.7.4 1.5.5 2.7.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 2-.5 2.7-.3.7-.7 1.3-1.3 1.9-.6.6-1.2 1-1.9 1.3-.7.3-1.5.4-2.7.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.2-2.7-.5-.7-.3-1.3-.7-1.9-1.3-.6-.6-1-1.2-1.3-1.9-.3-.7-.4-1.5-.5-2.7C2 15.6 2 15.2 2 12s0-3.6.1-4.8c.1-1.2.2-2 .5-2.7.3-.7.7-1.3 1.3-1.9.6-.6 1.2-1 1.9-1.3.7-.3 1.5-.4 2.7-.5C8.4 2.2 8.8 2.2 12 2.2Zm0 1.8c-3.1 0-3.5 0-4.7.1-1 .1-1.6.2-2 .3-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.3 1-.3 2-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1 .2 1.6.3 2 .2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1 1 .3 2 .3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1-.1 1.6-.2 2-.3.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.3-1 .3-2 .1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.6-.3-2-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-1-.3-2-.3-1.2-.1-1.6-.1-4.7-.1Zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.1-2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
+        </a>
+        <a href="#" aria-label="Yelp" class="social-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16Zm-1 3v6l4-3-4-3Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> King Asian Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button id="back-to-top" aria-label="Back to top">&uarr;</button>
 
   <script src="script.js"></script>
 </body>
