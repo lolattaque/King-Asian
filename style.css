@@ -531,11 +531,16 @@ button.menu-row.menu-item .item-name::after {
 .tray-prices {
   display: flex;
   gap: 16px;
+  flex: 0 0 auto;
 }
 
 .tray-prices span {
   min-width: 48px;
   text-align: right;
+}
+
+.tray-prices .price {
+  flex: 0 0 auto;
 }
 
 .tray-header .tray-prices span {
